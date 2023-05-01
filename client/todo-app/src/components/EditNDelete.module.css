@@ -1,0 +1,42 @@
+.list {
+	text-align: center;
+	padding: 10px;
+}
+
+.list li {
+	padding: 15px;
+}
+
+.list button {
+	padding: 5px;
+}
+
+.list input {
+	padding: 5px;
+}
+
+.todoTitle {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.btnGroup {
+	gap: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.editBtn {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	width: 50%;
+}
+
+.deleteBtn {
+	background-color: #ca3c3c;
+	color: white;
+	border: 1px solid #bd2130;
+	width: 50%;
+}
