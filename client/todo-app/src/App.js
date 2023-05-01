@@ -7,7 +7,7 @@ function App() {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		fetch("http://localhost:3001/api/my_table/")
+		fetch("https://team-todo-app.onrender.com/api/my_table/")
 			.then((response) => response.json())
 			.then((data) => setData(data))
 			.catch((error) => console.error(error));
@@ -23,13 +23,16 @@ function App() {
 
 	const saveTheChange = async (id, newTodo) => {
 		try {
-			const response = await fetch(`http://localhost:3001/api/my_table/${id}`, {
-				method: "PUT",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({ todo: newTodo }),
-			});
+			const response = await fetch(
+				`https://team-todo-app.onrender.com/api/my_table/${id}`,
+				{
+					method: "PUT",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({ todo: newTodo }),
+				}
+			);
 
 			if (response.ok) {
 				const updatedItem = await response.json();
