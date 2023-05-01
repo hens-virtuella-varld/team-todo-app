@@ -19,7 +19,7 @@ const Update = (props) => {
 	const postData = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await fetch("http://localhost:3001/api/my_table", {
+			const response = await fetch(`https://team-todo-app.onrender.com/api/my_table`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

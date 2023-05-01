@@ -8,7 +8,7 @@ function Read(props) {
 
 	const deleteItem = async (id) => {
 		try {
-			const response = await fetch(`http://localhost:3001/api/my_table/${id}`, {
+			const response = await fetch(`https://team-todo-app.onrender.com/api/my_table/${id}`, {
 				method: "DELETE",
 			});
 
